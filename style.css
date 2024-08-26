@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #6C63FF;
+  --secondary-color: #4CAF50;
+  --text-color: #ffffff;
+  --background-color: #000000;
+  --card-background: #1a1a1a;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+.content {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 100px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.license-activation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  color: var(--text-color);
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #5753e0;
+}
+
+.license-plans {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.plan {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--card-background);
+  padding: 30px;
+  border-radius: 10px;
+  z-index: 1000;
+  display: none;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.wallet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.coin {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.coin:hover {
+  transform: scale(1.05);
+}
+
+.transaction-history {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  background-color: var(--card-background);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+tr {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.address {
+  word-break: break-all;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+.copy-btn {
+  padding: 5px 10px;
+  font-size: 0.8em;
+  background-color: var(--secondary-color);
+}
+
+#countdown {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: var(--primary-color);
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #2a2a2a;
+  color: var(--text-color);
+}
